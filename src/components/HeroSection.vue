@@ -269,6 +269,7 @@ function scrollToVision() {
 .hero-image.loaded {
   opacity: 1;
   transform: translateY(0);
+  margin: 0 auto;
 }
 
 .hero-image img {
