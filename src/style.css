@@ -1,0 +1,110 @@
+:root {
+  --primary: #009A5B;
+  --primary-dark: #007A48;
+  --primary-light: #00C472;
+  --primary-bg: #f0faf5;
+  --text-dark: #1a2e28;
+  --text-body: #3a4a44;
+  --text-light: #6b7d76;
+  --white: #ffffff;
+  --cream: #fafcfb;
+  --gold: #c8a951;
+  --section-bg: #f5f9f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  color: var(--text-body);
+  background: var(--white);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+#app {
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Noto Serif TC', serif;
+  color: var(--text-dark);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 48px 0;
+  }
+
+  html {
+    font-size: 15px;
+  }
+}
