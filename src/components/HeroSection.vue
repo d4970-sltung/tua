@@ -227,7 +227,7 @@ function scrollToVision() {
 <style scoped>
 .hero {
   position: relative;
-  height: 100vh;
+  height: 100dvh;
   min-height: 700px;
   overflow: hidden;
   background: #ddf1e5;
@@ -277,7 +277,7 @@ function scrollToVision() {
   width: 100%;
   max-width: 480px;
   height: auto;
-  max-height: 88vh;
+  max-height: 88dvh;
   object-fit: contain;
   object-position: bottom;
   filter: drop-shadow(4px 8px 24px rgba(0, 0, 0, 0.1));
@@ -443,7 +443,7 @@ function scrollToVision() {
 @media (max-width: 768px) {
   .hero {
     height: auto;
-    min-height: 100vh;
+    min-height: 100dvh;
   }
 
   .hero-inner {
@@ -459,7 +459,7 @@ function scrollToVision() {
 
   .hero-image img {
     max-width: 280px;
-    max-height: 50vh;
+    max-height: 50dvh;
   }
 
   .hero-content {

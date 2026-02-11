@@ -158,7 +158,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
     top: 0;
     right: -100%;
     width: 260px;
-    height: 100vh;
+    height: 100dvh;
     background: white;
     flex-direction: column;
     padding: 80px 24px 24px;
