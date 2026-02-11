@@ -5,4 +5,7 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   base: '/tua/', // TODO: Update this if your repository name is different
+  server: {
+    host: '0.0.0.0',
+  },
 })
