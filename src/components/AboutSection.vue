@@ -32,7 +32,7 @@ const highlights = [
     <div class="container">
       <div class="about-header fade-in">
         <span class="section-label">關於歐院長</span>
-        <h2 class="section-title">誠信、認真、可溝通<br>不逃避問題</h2>
+        <h2 class="section-title">真心做人見真情，用心做事不怕難，<br>誠心感恩見奇蹟</h2>
         <div class="section-line"></div>
       </div>
 

@@ -29,19 +29,20 @@ const milestones = [
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>`,
   },
   {
-    year: '2005',
-    title: '國際手術交流',
-    desc: '師承 Dr. Vipul Patel、Dr. Ash Tewari、Dr. Peter Wiklund，投入機械手臂手術教學與推廣。',
-    color: '#14b8a6',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>`,
-  },
-  {
     year: '2016',
     title: '萬人篩檢行動',
     desc: '發起萬人攝護腺篩檢行動，2024-2025年串聯全國泌尿科力量推動第六癌篩檢。',
     color: '#ec4899',
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>`,
   },
+  {
+    year: '2005-2025',
+    title: '國際手術交流',
+    desc: `1. 美國印第安那普渡大學、俄亥俄州立大學、爾灣大學、南加大、佛羅里達大學、康乃爾大學長老教會醫院、克里夫蘭中心、天普大學、西奈山附設醫院、亨利·福特醫院。\n2. 瑞典卡羅琳學院進修。\n3. 韓國延世大學、日本順天堂、藤澤醫院、香港中文大學、馬來西亞畢卡索醫院、菲律賓天主教醫院。\n4. 比利時魯汶大學醫院、比利時 Onze Lieve Vrouwziekenhuis、Onze-Lieve-Vrouwziekenhuis (OLV) 醫院 and Orsi (OLV Robotic Surgery Institute) Academy 學院觀察員。\n5. 法國史特拉斯堡 (Strasbourg) IRCAD (Institut de Recherche contre les Cancers de l'Appareil Digestif) 微創中心。`,
+    color: '#14b8a6',
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>`,
+  },
+  
   {
     year: '歷年',
     title: '學會深耕服務',
@@ -264,6 +265,7 @@ const milestones = [
   font-size: 0.92rem;
   line-height: 1.7;
   color: var(--text-light);
+  white-space: pre-line;
 }
 
 /* ---- Mobile ---- */
