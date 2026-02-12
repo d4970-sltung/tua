@@ -19,6 +19,16 @@
         </div>
         <div class="video-frame">
           <iframe
+            src="https://www.youtube.com/embed/X2-ya31sMiY?si=Hl54xLa_szrV1T45"
+            title="歐宴泉醫師影片"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video-frame">
+          <iframe
             src="https://www.youtube.com/embed/-NcRzXQQvTg?si=0hetHOug-fdVcQeQ"
             title="台灣新創醫學會率先發起全台聯合倡議－攝護腺癌納入公費癌症篩檢！"
             frameborder="0"
@@ -105,13 +115,14 @@
 }
 
 .video-frame:nth-child(1),
-.video-frame:nth-child(2) {
-  grid-column: span 3;
+.video-frame:nth-child(2),
+.video-frame:nth-child(3) {
+  grid-column: span 2;
 }
 
-.video-frame:nth-child(3),
 .video-frame:nth-child(4),
-.video-frame:nth-child(5) {
+.video-frame:nth-child(5),
+.video-frame:nth-child(6) {
   grid-column: span 2;
 }
 
@@ -143,7 +154,8 @@
   .video-frame:nth-child(2),
   .video-frame:nth-child(3),
   .video-frame:nth-child(4),
-  .video-frame:nth-child(5) {
+  .video-frame:nth-child(5),
+  .video-frame:nth-child(6) {
     grid-column: span 1;
   }
 }
