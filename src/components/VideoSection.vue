@@ -9,6 +9,16 @@
       <div class="video-grid fade-in">
         <div class="video-frame">
           <iframe
+            src="https://www.youtube.com/embed/GTUPT1J5iuU"
+            title="TIMA X TICS2025: GLOBAL CONNECTION 國際研討會"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video-frame">
+          <iframe
             src="https://www.youtube.com/embed/-NcRzXQQvTg?si=0hetHOug-fdVcQeQ"
             title="台灣新創醫學會率先發起全台聯合倡議－攝護腺癌納入公費癌症篩檢！"
             frameborder="0"
@@ -88,10 +98,21 @@
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 25px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
+}
+
+.video-frame:nth-child(1),
+.video-frame:nth-child(2) {
+  grid-column: span 3;
+}
+
+.video-frame:nth-child(3),
+.video-frame:nth-child(4),
+.video-frame:nth-child(5) {
+  grid-column: span 2;
 }
 
 .video-frame {
@@ -103,17 +124,27 @@
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
 }
 
-.video-frame iframe {
+.video-frame iframe,
+.video-frame video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 1024px) {
   .video-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .video-frame:nth-child(1),
+  .video-frame:nth-child(2),
+  .video-frame:nth-child(3),
+  .video-frame:nth-child(4),
+  .video-frame:nth-child(5) {
+    grid-column: span 1;
   }
 }
 
